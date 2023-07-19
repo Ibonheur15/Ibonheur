@@ -1,0 +1,650 @@
+body{
+  font-family: Tahoma;
+    padding-top: 1px;
+    margin-top: 0px;
+    text-align: center;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+
+.container{
+  background-color: rgb(10, 7, 22);
+  margin:0;
+  overflow:hidden;
+  
+  
+}
+
+
+
+
+nav{
+  background-color: white;
+  overflow:hidden;
+  color: black;
+  border-bottom: yellowgreen 1px solid;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  box-shadow: 2px 1px 2px  #000000;
+    }
+  
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+#home{
+    display: none;
+}
+
+nav  ul li {
+    display: inline;
+    line-height: 50px;
+    margin: 0 5px;
+
+}
+nav  ul li a{
+    color: black;
+    font-size: 15px;
+    padding: 7px 13px;
+    
+}
+nav  ul li a p{
+    display: none;
+}
+nav ul  li a.active, a:hover{
+    color: rgb(0, 153, 255);
+    border: solid rgb(0, 153, 255) 3px ;
+    border-radius: 5px;
+}
+.checkbtn{
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 2px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navbar{
+    position: fixed;
+    background: white;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px  #000000;
+    
+}
+
+.navbar ul li{
+ display: inline-flex;
+ padding: 0;
+ margin: 10px;
+ 
+}
+
+.navbar ul li a{
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+.navbar ul li a:hover{
+  border: none;
+  color: rgb(0, 153, 255);
+}
+@media(max-width:952px){
+    lable.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+     ul li a{
+        font-size: 16px;
+    }
+    nav{
+   
+  background: white;
+  color: white;
+  border-bottom: transpalent;
+   box-shadow: 2px 1px 2px  #000000;
+    }
+}
+
+@media(max-width:858px){
+.navbar{
+    box-shadow: none;
+    transform: translate(-28px,-92px);
+    scale: 0.9;
+    width: 250px;
+}
+
+
+    
+    .container{
+  background-color: white;
+  margin:0;
+  overflow:hidden;
+    }
+    
+    .checkbtn{
+        display: block;
+       transform: translateY( -15px)
+    }
+   nav  ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 100px;
+        left: 100%;
+        text-align: left;
+        transition: all .5s;
+        overflow: hidden;
+        top: 48px;
+    }
+  nav  ul li{
+        display: block;
+        
+        
+    }
+   nav ul li a{
+        font-size: 20px;
+    }
+  
+
+    nav ul li a p{
+        display: inline;
+    }
+
+    #home{
+        display: block;
+        float: left;
+    }
+    #check:checked ~  ul{
+        left: 0;
+        
+    }
+    
+
+
+    
+}
+
+    
+
+
+
+label.logo{
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.content{
+    overflow: hidden;
+}
+
+.subscribe{
+    background: rgb(139, 134, 202);
+    width: 100%;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    
+}
+.subscribe p{
+    float: left;
+    margin-left: 30px;
+   text-decoration: dashed;
+
+}
+
+
+
+.copyright{
+    background-color: rgb(8, 4, 15);
+    color: white;
+    overflow: hidden;
+   float:bottom;
+}
+
+input[type=email], input[type=tel] {
+    width: 30%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: solid rgb(0, 153, 255);
+    border-left:solid 1px rgb(0, 153, 255);
+    border-right: none;
+    border-top: none;
+    border-radius: -5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  .subscribe button {
+    background-color:rgb(0, 153, 255) ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 5%;
+    
+  }
+  
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    margin-bottom: 10%;
+    margin-right: 10%;
+    background-color: rgb(181, 181, 255);
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width:858px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+
+    input[type=email], input[type=tel]{
+      width: 80%;
+    }
+    /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: auto; /* Could be more or less, depending on screen size */
+  }
+  }
+
+  ul span{
+    font-size: 30px;
+  }
+  ul span:hover{
+    color: red;
+  }
+
+  section{
+    margin-left: 5px;
+  }
+
+  
+button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: white;
+  background: rgb(0, 153, 255);
+  border-radius: 5px;
+  font-size: 14px;
+  
+}
+
+ /*talends*/
+.talends{
+  box-shadow: 2 10px 2px  #000000;
+  margin-top: 20px;
+  
+}
+/*application*/
+.application{
+  box-shadow: 2px 0px 2px  #000000;
+}
+/*Liburary*/
+.Liburary{
+  box-shadow: 2px 0px 2px  #000000;
+}
+/*services*/
+.services{
+  box-shadow: 2px 0px 2px  #000000;
+}
+
+
+
+.resp {
+  display: inline-block;
+  cursor: pointer;
+  border:1px solid rgb(0, 153, 255);
+  border-radius: 5px;
+}
+
+.resp:hover{
+  border:1px solid rgba(64, 66, 68, 0.829);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(0, 153, 255);
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+
+.column{
+  float:left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* my service styling */
+/*float four column side by side*/
+.column1{
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+}
+
+.row1{
+  margin: 0 -5px;
+}
+
+.row1:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*responsive column*/
+@media screen and (max-width: 600px) {
+  .column1{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}
+
+/*style counter cards*/
+.card{
+  box-shadow: 0 4px 8px rgb(145, 145, 146);
+  padding: 6%;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: left;
+}
+.card-news{
+  box-shadow: 0 2px 4px rgb(145, 145, 146);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  
+}
+
+.card-exp{
+  box-shadow: 0 2px 4px rgb(236, 236, 236);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  
+}
+
+.card-universities{
+  box-shadow: 0 4px 8px rgb(145, 145, 146);
+  padding: 16px;
+  text-align: center;
+  background-color: #e3edff;
+  border-radius: 10px;
+}
+
+#showcase{
+  padding-top: 50px; 
+  padding-bottom:50px ; 
+  text-align: center; 
+  background-repeat: no-repeat; 
+  color: white; 
+  background-size: 100%;
+}
+#explore{
+  position: relative;
+  border-radius: 5px;
+  animation: mymove 5s ;
+  animation-delay: 0s;
+}
+@keyframes mymove {
+  from {left: -600px;}
+  to {left: 0px;}
+}
+
+.row-about{
+  margin-left: 25%;
+  text-align: center;
+}
+@media screen and (max-width: 600px){
+  .row-about{
+    margin: 0 -5px;
+    text-align: center;
+  }
+}
+
+.background{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mission{
+  background-color: rgb(205, 227, 255);
+  margin: 5%;
+  border-radius: 10px;
+}
+
+/*style intput on contact section*/
+input[type=text],input[type=email],select,textarea{
+  width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+   
+    border-right: none;
+    border-top: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=submit]{
+  background-color: rgb(255, 94, 0);
+  color: wheat;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[typ=submit]:hover{
+  background-color: yellowgreen;
+}
+
+.contact-box{
+  width: 99%;
+  border-radius: 10px;
+  background-color: rgb(146, 153, 255);
+  padding: 10px;
+}
+
+.column{
+  float:left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .column-madia{
+    margin: 5%;
+  }
+}
+
+.column-madia{
+  margin: 25%;
+}
+.whatsapp{
+  margin: 10%;
+}
+
+#madia ul li{
+  display: inline-flex;
+  padding: 5px;
+  margin: 5px;  
+ }
+
+footer{
+  background: rgb(1, 8, 70);
+  overflow: hidden;
+  color: white;
+}
+
+.card-service{
+  box-shadow: 0 4px 8px rgb(145, 145, 146);
+  padding: 6%;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cat ul li a{
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+  color: white;
+}
